@@ -4,7 +4,6 @@ Documentation=http://supervisord.org
 After=network.target
 
 [Service]
-LimitNOFILE=30000
 Type=forking
 ExecStart=/usr/local/bin/supervisord -c /etc/supervisord.conf
 ExecReload=/usr/local/bin/supervisorctl reload
